@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar {
+    display: flex;
+    align-items: center;
+    background-color: #21222a;
+    padding: 30px 25px;
+    height: 90px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav--icon {
+    width: 30px;
+    margin-right: 7px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav--logo_text {
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav--title {
+    color: #DEEBF8;
+    font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Main {
+    height: 100%;
+    padding: 57px 27px;
+    color: white;
+    z-index: 1;
+}
+
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.main--list {
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+.main--list > li {
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.main--list > li::marker {
+    color: #61DAFB;
+    font-size: 1.5rem;
 }
